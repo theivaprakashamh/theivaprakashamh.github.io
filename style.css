@@ -83,3 +83,9 @@
 @media(max-width:540px){.personal-grid{padding-top:46px;padding-bottom:60px}.personal-intro .hero-title span{font-size:clamp(1.85rem,8.7vw,2.9rem)}.personal-intro .hero-title{font-size:58px}.personal-intro .hero-statement{font-size:28px}.personal-visual{padding:10px 20px 52px 0}.portrait-outline{inset:0 35px 62px -8px}.hero-stamp{width:62px;height:62px;font-size:6px}.hero-stamp strong{font-size:18px}.butterfly-inset{width:43%}.press-cards{grid-template-columns:1fr}.press-card{grid-template-columns:1fr 1.1fr;min-height:205px}.press-visual{min-height:205px}.press-copy{min-height:205px;padding:18px 15px}.press-copy h3{font-size:22px}.press-copy p{font-size:13px}.press-source{font-size:9px;line-height:1.4}}
 @media(max-width:370px){.press-card{grid-template-columns:1fr}.press-visual{min-height:170px}}
 @media(prefers-reduced-motion:reduce){.hero-portrait img,.hero-stamp{animation:none}.press-card,.press-visual img{transition:none}.press-card:hover,.press-card:focus-within,.press-card:hover .press-visual img{transform:none}}
+
+/* Keep both parts of the name the same size at every screen width. */
+.personal-intro .hero-title{font-size:clamp(2.05rem,4.15vw,4.4rem)}
+.personal-intro .hero-title span{font-size:inherit}
+@media(max-width:850px){.personal-intro .hero-title{font-size:clamp(2.05rem,6.7vw,4.1rem)}.personal-intro .hero-title span{font-size:inherit}}
+@media(max-width:540px){.personal-intro .hero-title{font-size:clamp(1.75rem,8vw,2.9rem)}.personal-intro .hero-title span{font-size:inherit}}
